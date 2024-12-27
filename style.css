@@ -1,0 +1,108 @@
+body {
+    background: #f2f2f2;
+}
+
+body hr {
+    border-color: #d7d7d7;
+    margin: 10px 0;
+}
+
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.bg-warning {
+    background-color: #67CFC1 !important;
+}
+
+.navbar {
+    padding: 0 12px;
+    margin:0;
+}
+
+.navbar-brand {
+    margin: 5px;;
+    font-size:1.1rem;
+    flex-wrap: wrap;
+    padding: auto;
+}
+
+
+.row {
+    margin: 0;
+}
+
+
+.chart {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.chart-stage div {
+    width: 100%;
+}
+
+
+.chart-wrapper {
+    background: rgb(230, 14, 14)828;
+    border: 1px solid #15d438d8;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+
+.chart-wrapper .chart-title {
+    border-bottom: 1px solid #d7d7d7;
+    color: #666;
+    font-size: 14px;
+    font-weight: 200;
+    padding: 7px 10px 4px;
+}
+
+.chart-wrapper .chart-stage {
+    min-height: 70px; /* Adjust this value to your preference */
+    overflow: hidden;
+    padding:2px 2px;
+    position: relative;
+}
+
+#year-selector {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+
+.state {
+    stroke: black;
+    stroke-width: 2px;
+}
+
+#info-box {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    z-index: 10;
+    width: 300px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    display: none;
+}
+#info-box.has-content {
+    display: block;
+}
+
+.tooltip {
+    color: black;
+    background-color: white;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #666;
+    z-index: 1000; /* Makes sure the tooltip appears above other elements */
+}

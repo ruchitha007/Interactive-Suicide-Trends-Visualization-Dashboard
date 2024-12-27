@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Data Visualization Dashboard</title>
+    <script type="text/javascript" src="https://d3js.org/d3.v7.min.js"></script>
+    <script type="text/javascript" src="https://d3js.org/topojson.v3.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div class="navbar navbar-dark bg-warning sticky-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand">Suicide Rates in the US</a> (Year 2005 - 2020)
+                <a id='year-selector'></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-3 chart">
+                <div class="row">
+                    <!-- Counter -->
+                    <div class="col-lg-12 chart">
+                        <div class="chart-wrapper">
+                            <div class="chart-title">
+                                Total No of Suicides
+                            </div>
+                            <div class="chart-stage">
+                                <div id="suicides-figure"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Pie Chart -->
+                    <div class="col-lg-12 chart">
+                        <div class="chart-wrapper">
+                            <div class="chart-title">
+                                Suicide Rate by Ethnicity
+                            </div>
+                            <div class="chart-stage">
+                                <div id="pie-chart"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Row chart -->
+                    <div class="col-lg-12 chart">
+                        <div class="chart-wrapper">
+                            <div class="chart-title">
+                                Top 10 States with the Highest Suicide Rate
+                            </div>
+                            <div class="chart-stage">
+                                <div id="row-chart"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-9 chart">
+                <div class="row">
+                    <!-- Bar chart -->
+                    <div class="col-lg-6 chart">
+                        <div class="chart-wrapper">
+                            <div class="chart-title">
+                                Suicide Rate by Age Group
+                            </div>
+                            <div class="chart-stage">
+                                <div id="bar-chart"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Line Chart -->
+                    <div class="col-lg-6 chart">
+                        <div class="chart-wrapper">
+                            <div class="chart-title">
+                                Suicide Rate by Year
+                            </div>
+                            <div class="chart-stage">
+                                <div id="line-chart">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Map Chart -->
+                    <div class="col-lg-12 chart">
+                        <div class="chart-wrapper">
+                            <div class="chart-title">
+                                Suicide Rate Statewide
+                            </div>
+                            <div class="chart-stage">
+                                <div id="map-chart"></div>
+                                <div id="info-box">Hover on a state to see data.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.0.0/d3.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/queue-async/1.0.7/queue.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.min.js">
+    </script>
+    <script src="new_script.js">
+    </script>
+</body>
+
+</html>
